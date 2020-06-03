@@ -46,10 +46,10 @@
         
         "source": {
             "type": "PlatformImage",
-                "publisher": "MicrosoftWindowsServer",
-                "offer": "WindowsServer",
-                "sku": "2019-Datacenter",
-                "version": "latest"
+                "publisher": "MicrosoftWindowsDesktop",
+                "offer": "windows-10",
+                "sku": "19h1-evd",
+                "version": "18362.836.2005071659"
             
         },
         "customize": [
@@ -57,7 +57,7 @@
                 "type": "PowerShell",
                 "name": "CreateBuildPath",
                 "runElevated": false,
-                "scriptUri": "https://raw.githubusercontent.com/danielsollondon/azvmimagebuilder/master/testPsScript.ps1"
+                "scriptUri": "https://raw.githubusercontent.com/Everink/AzureImageBuilder/master/Scripts/AzureImageBuilder.ps1"
             },
             {
                 "type": "WindowsRestart",
